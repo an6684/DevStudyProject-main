@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&text=OpenAPI를%20사용하여%20Android%20App%20개발하기📱&animation=twinkling&fontSize=23&fontAlignY=40&fontAlign=70&height=250&width=1325&align=center)
+![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&text=DevStudy%20Project&animation=twinkling&fontSize=40&fontAlignY=40&fontAlign=70&height=250&width=1325&align=right)
 <br>
 <br>
 <div align="center">
