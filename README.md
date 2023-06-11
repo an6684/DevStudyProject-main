@@ -9,14 +9,19 @@
 <br>
 <br>
 <br>
-    > ### 1. LocalStorage란?
+
+  > ### 1. LocalStorage란?
+
   - localStorage(로컬스토리지)는 사용자의 로컬에 존재하는 저장소이다.<br>
   - 사용자는 이 저장소에 특정 데이터를 저장하거나 수정하거나 삭제할 수 있다.<br>
   - 웹 스토리지(web storage)에는 로컬 스토리지(localStorage)와 세션 스토리지(sessionStorage)가 있는데, 세션 스토리지는 웹페이지의 세션이 끝날 때 저장된 데이터가 지워지     는 반면에, 로컬 스토리지는 웹페이지의 세션이 끝나더라도 데이터가 지워지지 않는다.<br>
-  - ChatGPT가 나오기 이전에도 자연어로 사람과 대화할 수 있는 AI들이 있었으나 미리 학습된 규칙과 패턴에 의해서만 대화가 가능한 수준이었다.<br>
+  -  스토리지의 데이터 영속성(persistence)은 어디까지나 계속해서 동일한 컴퓨터에서 동일한 브라우저를 사용할 때만 해당한다.<br>
 <br>
- <img width="1325" alt="ppt1" src="https://github.com/whiteDwarff/ChatGPT_App/assets/115057117/061e600c-2216-4247-ae13-55447b3e9c85">
-<br><br><br>
+<br>
 <hr>
 <br><br>
+
+  > ### 2-1. LocalStorage 데이터 생성 및 저장
+
+  - html으로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스 내부에 각각 subject, title, content, url로 선언
 
