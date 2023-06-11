@@ -19,7 +19,7 @@
 <br>
 <br>
 <hr>
-<br><br>
+<br>
 
   > ### 2-1. LocalStorage 데이터 생성 및 저장
 <br>
@@ -27,8 +27,8 @@
   <img width="1325" alt="ppt1" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/eec8d3af-7adb-4aa6-aba6-3bd3c762b63d">
   
 <br>
-  1. html로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스 내부에 각각 subject, title, content, url 속성을 설정.
-  <br><br>
+
+  - html로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스 내부에 각각 subject, title, content, url 속성을 설정.
   
   ```ruby class CustomUrl {
   constructor(subject, title, content, url) {
@@ -41,13 +41,36 @@
   }
   ```
   
- <br><br>
-  2. submit버튼에 클릭 이벤트리스너를 추가.<br>
-  3. 각 입력란 공백시 예외 처리 후 JSON.stringify()로 데이터 저장.
- <br><br>
+  - 각 입력란 공백시 예외 처리 후 JSON.stringify()로 데이터 저장.
  
-  <img width="1325" alt="ppt2" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/9bb04296-ca89-438b-945c-c12ce6daff86">
+ ```ruby
+ //title,content,url중 각각의 옵션 value가 공백일 때 예외처리 실행
+  if(title.value =='')
+    // alert() : 모든 브라우저의 동작을 멈춘다.
+    // e.prevaentDefault();로 예외 처리 후 alert() 사용
+    sumitTest(e, '제목을 입력하세요.');
+  else if(content.value =='')
+    sumitTest(e, '컨텐츠를 입력하세요.');
+  else if(url.value =='')
+    sumitTest(e, 'url을 입력하세요.');
+  // 모든 예외처리 후 상태변수를 true로 변경
+  else 
+    submitState = true;
+  
+  // 상태변수가 참일 경우에 로컬스토리지 저장
+  if(submitState) {
+    let obj=new CustomUrl(
+      subject.value,
+      title.value,
+      content.value,
+      url.value
+    );
+   //localStorage에 obj 저장-->JSON형식으로 넣어줘야 함
+    localStorage.setItem(localStorage.length, JSON.stringify(obj));
+ ```
  
+  <img width="1325" alt="ppt2" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/273166aa-c1db-4827-8547-e0d8a87ed644">
+  
  <br><br>
   
   
