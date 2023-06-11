@@ -66,3 +66,6 @@ h2{
     border: 2px solid rgb(11, 207, 11);
     transition: 0.2s;
 }
+textarea {
+    resize: none;
+}
