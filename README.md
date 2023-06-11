@@ -9,4 +9,3 @@
 <br>
 <br>
 <br>
-![footer](https://capsule-render.vercel.app/api?section=footer)
