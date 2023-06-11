@@ -24,6 +24,8 @@ span {
   padding-top: 20px;
   transition: ease-in-out 0.5s;
   font-size: 0;
+  border: 1px solid whitesmoke;
+  box-shadow: 0 19px 38px rgba(99, 98, 98, 0.1), 0 15px 12px rgba(99, 98, 98,0.1);
 }
 .card:hover{
   cursor: pointer;
