@@ -24,13 +24,13 @@
   > ### 2-1. LocalStorage 데이터 생성 및 저장
 <br>
 
-  ![등록화면](https://github.com/an6684/DevStudyProject-main/assets/132127166/eec8d3af-7adb-4aa6-aba6-3bd3c762b63d)
+  <img width="1325" alt="ppt1" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/eec8d3af-7adb-4aa6-aba6-3bd3c762b63d">
   
 <br>
-  - html로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스 내부에 각각 subject, title, content, url 속성을 설정.
+  1. html로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스 내부에 각각 subject, title, content, url 속성을 설정.
   <br><br>
   
-  ```class CustomUrl {
+  ```ruby class CustomUrl {
   constructor(subject, title, content, url) {
     this.subject = subject;
     this.title = title;
@@ -41,7 +41,15 @@
   }
   ```
   
-  <br>
+ <br><br>
+  2. submit버튼에 클릭 이벤트리스너를 추가.<br>
+  3. 각 입력란 공백시 예외 처리 후 JSON.stringify()로 데이터 저장.
+ <br><br>
+ 
+  <img width="1325" alt="ppt2" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/9bb04296-ca89-438b-945c-c12ce6daff86">
+ 
+ <br><br>
+  
   
   
 
