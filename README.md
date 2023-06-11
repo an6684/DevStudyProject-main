@@ -14,7 +14,7 @@
 
   - localStorage(로컬스토리지)는 사용자의 로컬에 존재하는 저장소이다.<br>
   - 사용자는 이 저장소에 특정 데이터를 저장하거나 수정하거나 삭제할 수 있다.<br>
-  - 웹 스토리지(web storage)에는 로컬 스토리지(localStorage)와 세션 스토리지(sessionStorage)가 있는데, 세션 스토리지는 웹페이지의 세션이 끝날 때 저장된 데이터가 지워지     는 반면에, 로컬 스토리지는 웹페이지의 세션이 끝나더라도 데이터가 지워지지 않는다.<br>
+  - 웹 스토리지(web storage)에는 로컬 스토리지(localStorage)와 세션 스토리지(sessionStorage)가 있는데, 세션 스토리지는 웹페이지의 세션이 끝날 때 저장된 데이터가 지워지는 반면에, 로컬 스토리지는 웹페이지의 세션이 끝나더라도 데이터가 지워지지 않는다.<br>
   -  스토리지의 데이터 영속성(persistence)은 어디까지나 계속해서 동일한 컴퓨터에서 동일한 브라우저를 사용할 때만 해당한다.<br>
 <br>
 <br>
@@ -22,6 +22,26 @@
 <br><br>
 
   > ### 2-1. LocalStorage 데이터 생성 및 저장
+<br>
 
-  - html으로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스 내부에 각각 subject, title, content, url로 선언
+  ![등록화면](https://github.com/an6684/DevStudyProject-main/assets/132127166/eec8d3af-7adb-4aa6-aba6-3bd3c762b63d)
+  
+<br>
+  - html로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스 내부에 각각 subject, title, content, url 속성을 설정.
+  <br><br>
+  
+  ```class CustomUrl {
+  constructor(subject, title, content, url) {
+    this.subject = subject;
+    this.title = title;
+    this.content = content;
+    this.url = url;
+    this.isPlayingState = false;
+    }
+  }
+  ```
+  
+  <br>
+  
+  
 
