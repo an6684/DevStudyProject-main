@@ -155,10 +155,10 @@ span{
     transform: scale(1.02);
 }
 .card a:hover{
-    cursor: pointer;
+    cursor: pointer;    
 }
 #contents > div{
-    position: relative;
+    position: relative; 
 }
 #heart{
     border-style: none;
