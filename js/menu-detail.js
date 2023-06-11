@@ -52,7 +52,7 @@ for(let i=0;i<detail.length;i++){
     detail[i].addEventListener('click',e=>{
         detail[i].href=`menu-detail.html?subject=${detail[i].innerText}`
         //
-            if(subject=='찜'){
+            if(subject=='Archive'){
                 for(let j=0;j<localStorage.length;j++){
                     let avi=JSON.parse(localStorage.getItem(j))
                     console.log(avi.isPlayingState)
