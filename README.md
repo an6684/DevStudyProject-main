@@ -8,8 +8,18 @@
 </div>
 <br>
 <br>
+<div align="center">
+<p align="center">
+<img width="100" alt="home-page QR code" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/c8b2bca2-4736-4005-a1c3-b8dea90c01a9"><br><br>
+</p>
+  
+  **DevStuey 홈페이지**
+  : <a href="https://an6684.github.io/DevStudyProject-main/">https://an6684.github.io/DevStudyProject-main/</a>
+</div>
 <br>
-
+  <img width="1325" alt="main" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/ba7c9642-1c22-44c3-af31-830acff2cf8e">
+  
+<br><br>
   > ### 1. LocalStorage란?
 
   - localStorage(로컬스토리지)는 사용자의 로컬에 존재하는 저장소이다.<br>
@@ -134,7 +144,12 @@
   <img width="1325" alt="ppt3" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/b5c29b74-dee2-42cb-bb68-3515d896a59c">
   
  <br><br>
- 
+ <hr>
+<br>
+
+  > ### 3-1. watch-avi.html 페이지 구현
+
+  >> 
   
   
   
