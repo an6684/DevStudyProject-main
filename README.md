@@ -144,7 +144,12 @@
   <img width="1325" alt="ppt3" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/b5c29b74-dee2-42cb-bb68-3515d896a59c">
   
  <br><br>
- 
+ <hr>
+<br>
+
+  > ### 3-1. watch-avi.html 페이지 구현
+
+  >> 
   
   
   
