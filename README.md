@@ -150,7 +150,7 @@
   > ### 3-1. watch-avi.html 페이지 구현
  <br>
   
-  - localstorage에 저장된 데이터들을 for문을 해 현재 동영상의 key(index)와 value(avi)를 찾아서 변수에 대입
+  - localstorage에 저장된 데이터들을 for문을 통해 현재 동영상의 key(index)와 value(avi)를 찾아서 변수에 대입
   
  <br>
  
