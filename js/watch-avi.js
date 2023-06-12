@@ -65,7 +65,6 @@ let detail=document.querySelectorAll('.detail')
 for(let i=0;i<detail.length;i++){
     if(detail[i].innerText==subject) detail[i].firstElementChild.style.color='rgb(5, 157, 5)'
     detail[i].addEventListener('click',e=>{
-        // detail[i].href=`menu-detail.html?subject=${detail[i].innerText}`
         for(let j=0;j<localStorage.length;j++){
             let avi=JSON.parse(localStorage.getItem(j))
             detail[i].href=`menu-detail.html?subject=${detail[i].innerText}`
@@ -90,10 +89,8 @@ const addKey=(key,el)=>{
     el.insertAdjacentHTML('afterbegin',temp)
 }
                     
-                    // <button class="heart"><i class="far fa-heart" style="color: #a7a6a6;"></i></button>
 const findSubject=(key,subject,el)=>{
     if(key.subject==subject){
-        // console.log(key.subject)
         addKey(key,el)
     }
 }
