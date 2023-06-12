@@ -38,7 +38,7 @@
   
 <br><br>
 
-  - html로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스의 에 각각 subject, title, content, url 속성을 설정.
+  - html로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스의 인스턴스에 subject, title, content, url 속성을 설정.
 <br>
   
   ```ruby class CustomUrl {
@@ -90,14 +90,14 @@
    > ### 2-2. LocalStorage에 저장된 subject와 일치하는 데이터를 불러와 script로 화면 구현
  <br>
  
-   - url에서 매개변수 값을 가져와 카드 생성하는 함수 코드 작성
+   - url에서 파라미터 값을 가져와 카드 생성하는 함수 코드 작성
  
  <br>
    
   ```ruby 
-  //url에서 매개변수 값 가져오기
+  //url에서 파라미터 값 가져오기
   const urlParams = new URLSearchParams(window.location.search);
-  //매개변수 값 확인
+  //파라미터 값 확인
   const subject = urlParams.get("subject");
 
   const addKey=(key,el)=>{
@@ -150,7 +150,7 @@
   > ### 3-1. watch-avi.html 페이지 구현
  <br>
   
-  - localstorage에 저장된 obj들을 for문을 이용해 현재 동영상의 key(index)와 value(avi)를 찾아서 변수에 대입
+  - localstorage에 저장된 데이터들을 for문을 통해 현재 동영상의 key(index)와 value(avi)를 찾아서 변수에 대입
   
  <br>
  
@@ -200,8 +200,9 @@
   > ### 3-2. 관심목록 추가 기능 구현
  <br>
   
-  - **2-1**
-  에서 생성한 CustomUrl 내부의 isPlayingState 인스턴스를 불러와 하트 버튼을 클릭하면 색이 채워지고 isPlayingState의 값을 true로 변경
+  - 하트모양 클릭시
+  **2-1**
+  에서 CustomUrl 클래스에서 생성된 인스턴스의 디폴트값인 isPlayingState의 속성을 true로 변경하고 색이 채워진 하트모양으로 변경 , false이면 빈 하트모양으로 변경
   
  <br>
  
@@ -233,7 +234,23 @@
   <img width="1325" alt="ppt5" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/dd39dd68-9b7d-4c4a-8d13-f6817edab0bc">
   
  <br><br>
+
+  > ### 4-1.Queue 자료구조 응용
+<br>
+
+ - ***Queue(큐)*** 
+ 자료구조란, 먼저 집어 넣은 데이터가 먼저 나오는 FIFO(First In First Out)구조로 저장하는 형식을 말한다.
+ <br>
+ 
+ <p align="center">
+  <img width="825" alt="ppt5" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/ce766375-a688-4d6e-b2bd-0814ae4217cf">
+  </p>
   
+ <br><br>
+ 
+ - 로컬스토리지는 value의 obj를 배열 형태로 저장할 수 있고 등록한 순서대로 키 값이 저장되기 때문에 
+ 
+
   
   
 
