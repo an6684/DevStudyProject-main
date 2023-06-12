@@ -10,6 +10,9 @@
 <br>
 <br>
 
+  <img width="1325" alt="ppt1" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/ba7c9642-1c22-44c3-af31-830acff2cf8e">
+  
+<br><br>
   > ### 1. LocalStorage란?
 
   - localStorage(로컬스토리지)는 사용자의 로컬에 존재하는 저장소이다.<br>
