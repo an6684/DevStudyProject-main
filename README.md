@@ -38,7 +38,7 @@
   
 <br><br>
 
-  - html로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스 내부에 각각 subject, title, content, url 속성을 설정.
+  - html로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스의 에 각각 subject, title, content, url 속성을 설정.
 <br>
   
   ```ruby class CustomUrl {
@@ -150,7 +150,7 @@
   > ### 3-1. watch-avi.html 페이지 구현
  <br>
   
-  - localstorage에 저장된 obj들을 for문을 이용해 obj를 avi, key값을 index로 대입
+  - localstorage에 저장된 obj들을 for문을 이용해 현재 동영상의 key(index)와 value(avi)를 찾아서 변수에 대입
   
  <br>
  
