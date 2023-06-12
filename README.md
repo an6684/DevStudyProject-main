@@ -145,11 +145,54 @@
   
  <br><br>
  <hr>
-<br><br>
+ <br><br>
 
   > ### 3-1. watch-avi.html 페이지 구현
-  >> 
+ <br>
   
+  - localstorage에 저장된 obj들을 for문을 이용해 obj를 avi, key값을 index로 대입
+  
+ <br>
+ 
+ ```ruby
+  let avi, index;
+
+  for(let i=0; i<localStorage.length; i++) {
+      let theme = JSON.parse(localStorage.getItem(i));
+      if(keyTitle == theme.title) {
+          avi = theme;
+          index = i;
+      }
+  }
+  console.log(avi);
+  console.log(index);
+  ```
+  <br>
+  
+   - avi.url(key.url), avi.title(key.title), avi.content(key.content)를 요소에 맞게 작성하여 template 변수에 저장하여 wrap에 삽입
+   
+  <br>
+ 
+  ```ruby
+  let template = `
+    <article id="url">
+        <div>
+            <embed id="main-url"
+            src="https://www.youtube.com/embed/${avi.url}?showinfo=0&modestbranding=1&rel=0"
+            ...
+    </article>
+    <article id="contents">
+        <div>
+            <h3>${avi.title}</h3>
+            <p>${avi.content}</p>
+            <button id="heart"> </button>
+        </div>
+    </article>
+`
+wrap.insertAdjacentHTML('beforeend',template);
+  ```
+  <br>
+
   
   
 
