@@ -193,12 +193,42 @@
   ```
   <br>
  
-  <img width="1325" alt="ppt3" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/18cb8fe3-abb5-46e0-b6dc-3a80de0a8dac">
+  <img width="1325" alt="ppt4" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/18cb8fe3-abb5-46e0-b6dc-3a80de0a8dac">
   
  <br><br>
   
+  > ### 3-2. 관심목록 추가 기능 구현
+ <br>
   
-
+  - **2-1**
+  에서 생성한 CustomUrl 내부의 isPlayingState 인스턴스를 불러와 하트 버튼을 클릭하면 색이 채워지고 isPlayingState의 값을 true로 변경
+  
+ <br>
+ 
+ ```ruby
+  // 찜한 동영상인 경우와 아닌 경우 버튼의 이미지 변경
+  const cartButton = document.getElementById('heart');
+  //버튼을 스크립트로 삽입했으므로 html파일 로드 후에 cartButton 셋팅
+  if(avi.isPlayingState) { //avi.isPlayingState의 값이 true인 경우에만 실행
+      cartButton.innerHTML = '<i class="fas fa-heart"></i>'; //찜 했을 경우
+  } else { //avi.isPlayingState의 값이 false일 경우 실행
+      cartButton.innerHTML = '<i class="far fa-heart"></i> '; //찜 해제 상태일때 빈 하트 아이콘이 표시됨
+  }
+  console.log(avi.isPlayingState)
+  cartButton.addEventListener('click', () => {
+      if(avi.isPlayingState) {
+          avi.isPlayingState = false;
+          localStorage.setItem(index, JSON.stringify(avi)); //index(key)를 찾아서 덮어씌운다
+          //셋팅된 cartButton의 이미지를 변경
+          cartButton.innerHTML = '<i class="far fa-heart"></i> ';
+      } else {
+          avi.isPlayingState = true;
+          localStorage.setItem(index, JSON.stringify(avi));
+          cartButton.innerHTML = '<i class="fas fa-heart"></i>';
+      }
+  })
+  ```
+  <br>
   
   
 
