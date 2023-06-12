@@ -55,7 +55,7 @@ document.getElementById("submit-btn").addEventListener("click", (e) => {
     
     // 확인을 누르면 화면전환
     if(confirm('동영상이 등록되었습니다. 홈화면으로 이동하시겠습니까?')) 
-      location.href='../index.html';
+      location.href='./index.html';
   }
 });
 
