@@ -249,7 +249,8 @@
  <br><br>
  
  - 메인에서 항상 최신 데이터를 갱신하기 위해 queue자료구조를 활용.
- - card를 저장하는 div의 저장공간이 4이고 overflow가 발생하면 제일 먼저 들어온 fornt card는 제거되고 새로운 near card가 삽입됨.->overflow가 발생할때마다 반복.
+ - card를 저장하는 div의 저장공간이 4이고 overflow가 발생하면 제일 먼저 들어온 fornt card는 제거되고 새로운 near card가 삽입됨.<br>
+ *->overflow가 발생할때마다 반복.*
 
   
   
