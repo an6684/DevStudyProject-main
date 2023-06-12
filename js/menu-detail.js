@@ -1,6 +1,6 @@
-//url에서 매개변수 값 가져오기
+//url에서 파라미터 값 가져오기
 const urlParams = new URLSearchParams(window.location.search);
-//매개변수 값 확인
+//파라미터 값 확인
 //-->main페이지에서 가령 HTML/CSS a태그 클릭시 넘어온 주소의 subject를 저장
 //--->HTML/CSS클릭시 menu-detail.html의 subject는 HTML/CSS가 됨
 const subject = urlParams.get("subject");
@@ -16,7 +16,7 @@ let temp=`
             </a>
         </div>
     `   
-    el.insertAdjacentHTML('afterend',temp)
+    el.insertAdjacentHTML('beforeend',temp)
 }
 
 //header밑에 제목 넣기
