@@ -192,6 +192,10 @@
   wrap.insertAdjacentHTML('beforeend',template);
   ```
   <br>
+ 
+  <img width="1325" alt="ppt3" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/18cb8fe3-abb5-46e0-b6dc-3a80de0a8dac">
+  
+ <br><br>
   
   
 
