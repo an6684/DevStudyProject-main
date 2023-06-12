@@ -38,7 +38,7 @@
   
 <br><br>
 
-  - html로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스의 에 각각 subject, title, content, url 속성을 설정.
+  - html로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스의 인스턴스에 subject, title, content, url 속성을 설정.
 <br>
   
   ```ruby class CustomUrl {
