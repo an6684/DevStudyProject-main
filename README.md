@@ -29,7 +29,7 @@
 <br>
 <br>
 <hr>
-<br>
+<br><br>
 
   > ### 2-1. LocalStorage 데이터 생성 및 저장
 <br>
@@ -145,10 +145,9 @@
   
  <br><br>
  <hr>
-<br>
+<br><br>
 
   > ### 3-1. watch-avi.html 페이지 구현
-
   >> 
   
   
