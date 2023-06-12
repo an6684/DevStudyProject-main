@@ -51,15 +51,9 @@ for(let i=0;i<detail.length;i++){
     if(detail[i].innerText==subject) detail[i].firstElementChild.style.color='rgb(5, 157, 5)'
     detail[i].addEventListener('click',e=>{
         detail[i].href=`menu-detail.html?subject=${detail[i].innerText}`
-        //
-            if(subject=='Archive'){
-                for(let j=0;j<localStorage.length;j++){
-                    let avi=JSON.parse(localStorage.getItem(j))
-                    console.log(avi.isPlayingState)
-                }
-            }
     })
 }
+
 if(subject==detail[5].innerText){
     for(let i=0;i<localStorage.length;i++){
         let avi=JSON.parse(localStorage.getItem(i))
