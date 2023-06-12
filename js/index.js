@@ -15,7 +15,7 @@ const addKey=(key,el)=>{
             </div>
         `   
         //temp로 저장한 card 클래스가 나중에 저장된 인덱스값이 맨 처음으로 추가되도록 설정
-        el.insertAdjacentHTML('beforeend',temp)
+        el.insertAdjacentHTML('afterbegin',temp)
 }
 
 const findSubject=(key,subject,el)=>{
