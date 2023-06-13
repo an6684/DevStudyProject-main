@@ -1,0 +1,34 @@
+@media screen and (max-width: 1600px) {
+  * {
+    transition: all 1s;
+  }
+  header {
+    width: 100%;
+    margin: 0 auto 3% auto;
+    text-align: center;
+  }
+  ul {
+    width: 80%;
+  }
+  h1 {
+    margin: 2% auto;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  * {
+    transition: all 1s;
+  }
+  .card {
+    width: 50%;
+    height: 401px;
+  }
+  embed {
+    width: 80%;
+    height: 240px;
+  }
+  section {
+    margin-bottom: 80px;
+    padding: 0 10px;
+  }
+}

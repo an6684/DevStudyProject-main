@@ -1,0 +1,19 @@
+@media screen and (max-width: 1000px) {
+  * {
+    transition: all 1s;
+  }
+  .wrap {
+    width: 70%;
+    height: 780px;
+    margin: 15% auto 0 auto;
+  }
+  select,
+  input,
+  textarea {
+    width: 85%;
+  }
+  #bottom {
+    width: 65%;
+    margin: -15px 0 0 0;
+  }
+}
