@@ -258,7 +258,10 @@
 <img width="1325" alt="ppt7" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/8a02c4ba-e7fb-45cd-83c9-96cd6d12fae9">
   
 <br><br>
- 
+ <p align="center">
+  <img width="625" alt="ppt6" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/c104e5f5-b014-4c5a-8df1-e7db55e37eda">
+  </p>
+  
   
   
 
