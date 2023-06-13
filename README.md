@@ -34,8 +34,10 @@
   > ### 2-1. LocalStorage 데이터 생성 및 저장
 <br>
 
-  <img width="1325" alt="ppt1" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/eec8d3af-7adb-4aa6-aba6-3bd3c762b63d">
-  
+<p align="center">
+  <img width="725" alt="ppt1" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/54dc4e4b-1042-4226-bbfe-5efd590964e7">
+</p>
+
 <br><br>
 
   - html로 작성한 select, input, textarea를 스크립트에서 CustomUrl클래스의 인스턴스에 subject, title, content, url 속성을 설정.
@@ -246,12 +248,12 @@
   <img width="625" alt="ppt6" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/6276a3a4-3bb2-4e57-9b39-f2c6a46cfc66">
   </p>
   
- <br><br>
+ <br>
  
  - 메인에서 항상 최신 데이터를 갱신하기 위해 queue자료구조를 활용.
  - card를 저장하는 div의 저장공간이 4이고 overflow가 발생하면 제일 먼저 들어온 front card는 제거되고 새로운 back card가 삽입됨.<br>
  *->overflow가 발생할때마다 반복.*
-<br>
+
  
 <img width="1325" alt="ppt7" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/8a02c4ba-e7fb-45cd-83c9-96cd6d12fae9">
   
