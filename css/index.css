@@ -17,8 +17,12 @@ span {
 .card {
   width: 23%;
   margin: 0 1%;
+<<<<<<< HEAD
   /* height: 86.1%; */
   height: 501px;
+=======
+  height: 86.1%;
+>>>>>>> 0c0a8acfeb10ac878b12b64d8733e7fe2d0e4539
   background-color: white;
   border-radius: 20px;
   text-align: center;
