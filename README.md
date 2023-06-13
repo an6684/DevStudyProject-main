@@ -243,7 +243,7 @@
  <br>
  
  <p align="center">
-  <img width="825" alt="ppt5" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/ce766375-a688-4d6e-b2bd-0814ae4217cf">
+  <img width="625" alt="ppt5" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/ce766375-a688-4d6e-b2bd-0814ae4217cf">
   </p>
   
  <br><br>
