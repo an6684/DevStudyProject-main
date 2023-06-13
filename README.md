@@ -235,7 +235,7 @@
   
  <br><br>
 
-  > ### 4-1.Queue 자료구조 응용
+  > ### 4-1. Queue 자료구조 응용
 <br>
 
  - ***Queue(큐)*** 
@@ -243,15 +243,20 @@
  <br>
  
  <p align="center">
-  <img width="625" alt="ppt5" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/ce766375-a688-4d6e-b2bd-0814ae4217cf">
+  <img width="625" alt="ppt6" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/6276a3a4-3bb2-4e57-9b39-f2c6a46cfc66">
   </p>
   
  <br><br>
  
  - 메인에서 항상 최신 데이터를 갱신하기 위해 queue자료구조를 활용.
- - card를 저장하는 div의 저장공간이 4이고 overflow가 발생하면 제일 먼저 들어온 fornt card는 제거되고 새로운 near card가 삽입됨.<br>
+ - card를 저장하는 div의 저장공간이 4이고 overflow가 발생하면 제일 먼저 들어온 front card는 제거되고 새로운 back card가 삽입됨.<br>
  *->overflow가 발생할때마다 반복.*
-
+<br>
+ 
+<img width="1325" alt="ppt7" src="https://github.com/an6684/DevStudyProject-main/assets/132127166/8a02c4ba-e7fb-45cd-83c9-96cd6d12fae9">
+  
+<br><br>
+ 
   
   
 
