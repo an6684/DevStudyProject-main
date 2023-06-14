@@ -37,6 +37,9 @@
   * {
     transition: all 1s;
   }
+  header {
+    margin: 5% auto;
+  }
   nav {
     display: none;
   }

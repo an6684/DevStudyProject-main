@@ -56,6 +56,9 @@
   * {
     transition: all 1s;
   }
+  header {
+    margin: 5% auto;
+  }
   nav {
     display: none;
   }
@@ -92,6 +95,9 @@
 @media screen and (max-width: 500px) {
   * {
     transition: all 1s;
+  }
+  header {
+    margin: 5% auto;
   }
   ul {
     width: 90%;
@@ -139,7 +145,8 @@
     padding: 0;
   }
   #heart {
-    font-size: 30px;
+    font-size: 20px;
     right: 20px;
+    bottom: -30px;
   }
 }
