@@ -85,7 +85,8 @@ ul {
   font-weight: bold;
 }
 ul li,
-h3 {
+h3,
+a {
   color: rgb(11, 207, 11);
 }
 h1 {
@@ -104,4 +105,10 @@ hr {
   font-weight: bold;
   letter-spacing: 1px;
   color: rgb(5, 157, 5);
+}
+.burger {
+  display: none;
+}
+#menu {
+  display: none;
 }

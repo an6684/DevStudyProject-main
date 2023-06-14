@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-//url에서 매개변수 값 가져오기
-const urlParams = new URLSearchParams(window.location.search)
-//매개변수 값 확인
-=======
 //url에서 파라미터 값 가져오기
-const urlParams = new URLSearchParams(window.location.search);
+const urlParams = new URLSearchParams(window.location.search)
 //파라미터 값 확인
->>>>>>> 0c0a8acfeb10ac878b12b64d8733e7fe2d0e4539
 //-->main페이지에서 가령 HTML/CSS a태그 클릭시 넘어온 주소의 subject를 저장
 //--->HTML/CSS클릭시 menu-detail.html의 subject는 HTML/CSS가 됨
 const subject = urlParams.get('subject')
@@ -21,13 +15,8 @@ const addKey = (key, el) => {
                 <embed controls=0 src="https://img.youtube.com/vi/${key.url}/maxresdefault.jpg" allowfullscreen></embed>
             </a>
         </div>
-<<<<<<< HEAD
     `
   el.insertAdjacentHTML('beforeend', temp)
-=======
-    `   
-    el.insertAdjacentHTML('beforeend',temp)
->>>>>>> 0c0a8acfeb10ac878b12b64d8733e7fe2d0e4539
 }
 
 //header밑에 제목 넣기
@@ -56,31 +45,16 @@ if (localStorage.length) {
 
 let detail = document.querySelectorAll('.detail')
 console.log(subject)
-<<<<<<< HEAD
-if (subject == detail[5].innerText) console.log('hi')
-for (let i = 0; i < detail.length; i++) {
-  if (detail[i].innerText == subject)
-    detail[i].firstElementChild.style.color = 'rgb(5, 157, 5)'
-  detail[i].addEventListener('click', e => {
-    detail[i].href = `menu-detail.html?subject=${detail[i].innerText}`
-  })
-}
-=======
-if(subject==detail[5].innerText) console.log('hi')
-for(let i=0;i<detail.length;i++){
-    if(detail[i].innerText==subject) detail[i].firstElementChild.style.color='rgb(5, 157, 5)'
-    detail[i].addEventListener('click',e=>{
-        detail[i].href=`menu-detail.html?subject=${detail[i].innerText}`
-    })
-}
 
-if(subject==detail[5].innerText){
-    for(let i=0;i<localStorage.length;i++){
-        let avi=JSON.parse(localStorage.getItem(i))
-        console.log(avi)
-        if(avi.isPlayingState){
-            let el=document.querySelector('#wrap')
->>>>>>> 0c0a8acfeb10ac878b12b64d8733e7fe2d0e4539
+if (subject == detail[5].innerText)
+  for (let i = 0; i < detail.length; i++) {
+    if (detail[i].innerText == subject)
+      detail[i].firstElementChild.style.color = 'rgb(5, 157, 5)'
+    detail[i].addEventListener('click', e => {
+      detail[i].href = `menu-detail.html?subject=${detail[i].innerText}`
+      document.querySelector('#menu').style.display = 'block'
+    })
+  }
 
 if (subject == detail[5].innerText) {
   for (let i = 0; i < localStorage.length; i++) {
@@ -93,3 +67,8 @@ if (subject == detail[5].innerText) {
     }
   }
 }
+
+//반응형 900px 이하일때 메뉴바 변경
+document.querySelector('#menu').addEventListener('click', function () {
+  document.querySelector('.list-group').classList.toggle('show')
+})

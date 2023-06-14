@@ -4,16 +4,16 @@ const queryAll = el => {
 
 const addKey = (key, el) => {
   let temp = `
-            <div class="card">
-                <a href="watch-avi.html?subject=${key.subject}&title=${key.title}">
-                    <span class="subject">${key.subject}</span>
-                    <span class="heart"></span>
-                    <span class="title">${key.title}</span>
-                    <span class="content">${key.content}</span>
-                    <embed controls=0 src="https://img.youtube.com/vi/${key.url}/maxresdefault.jpg" allowfullscreen></embed>
-                </a>
-            </div>
-        `
+          <div class="card">
+              <a href="watch-avi.html?subject=${key.subject}&title=${key.title}">
+                  <span class="subject">${key.subject}</span>
+                  <span class="heart"></span>
+                  <span class="title">${key.title}</span>
+                  <span class="content">${key.content}</span>
+                  <embed controls=0 src="https://img.youtube.com/vi/${key.url}/maxresdefault.jpg" allowfullscreen></embed>
+              </a>
+          </div>
+      `
   //temp로 저장한 card 클래스가 나중에 저장된 인덱스값이 맨 처음으로 추가되도록 설정
   el.insertAdjacentHTML('afterbegin', temp)
 }
@@ -55,3 +55,8 @@ if (localStorage.length) {
     }
   }
 }
+
+//반응형 900px 이하일때 메뉴바 변경
+document.querySelector('#menu').addEventListener('click', function () {
+  document.querySelector('.list-group').classList.toggle('show')
+})

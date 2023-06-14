@@ -73,3 +73,40 @@
     height: 220px;
   }
 }
+
+@media screen and (max-width: 900px) {
+  * {
+    transition: all 1s;
+  }
+  nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  header > div {
+    position: relative;
+  }
+  #menu {
+    width: 35px;
+    height: 35px;
+    display: block;
+    border-style: none;
+    font-size: 3rem;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 2.5%;
+    z-index: 99999;
+    top: 20%;
+  }
+  #menu i {
+    text-align: right;
+  }
+  .list-group {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+}
