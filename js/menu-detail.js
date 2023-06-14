@@ -44,17 +44,16 @@ if (localStorage.length) {
 }
 
 let detail = document.querySelectorAll('.detail')
+let secDetail = document.querySelectorAll('.sec-detail')
 console.log(subject)
-
-if (subject == detail[5].innerText)
-  for (let i = 0; i < detail.length; i++) {
-    if (detail[i].innerText == subject)
-      detail[i].firstElementChild.style.color = 'rgb(5, 157, 5)'
-    detail[i].addEventListener('click', e => {
-      detail[i].href = `menu-detail.html?subject=${detail[i].innerText}`
-      document.querySelector('#menu').style.display = 'block'
-    })
-  }
+if (subject == detail[5].innerText) console.log('hi')
+for (let i = 0; i < detail.length; i++) {
+  if (detail[i].innerText == subject)
+    detail[i].firstElementChild.style.color = 'rgb(5, 157, 5)'
+  detail[i].addEventListener('click', e => {
+    detail[i].href = `menu-detail.html?subject=${detail[i].innerText}`
+  })
+}
 
 if (subject == detail[5].innerText) {
   for (let i = 0; i < localStorage.length; i++) {
